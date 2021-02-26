@@ -1,0 +1,19 @@
+{% form 'storefront_password' %}
+{{ form.errors | default_errors }}
+<label for="password">Enter Password</label>
+<input type="password" name="password" placeholder="text">
+<input type="submit" value="Submit">
+{% endform %}
+
+{% schema %}
+{
+"name": "Section name",
+"settings": []
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
