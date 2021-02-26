@@ -1,0 +1,87 @@
+{% render 'hero' %}
+
+{% schema %}
+{
+ "name": "Hero Component",
+ "settings": [
+   {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image" 
+   },
+	{
+    "type": "image_picker",
+    "id": "mobile_image",
+    "label": "Mobile Image" 
+   },
+   {
+    "type": "select",
+    "id": "text_alignment",
+    "label": "Text Alignment",
+    "options": [
+      {
+        "value": "center",
+        "label": "Center"
+      },
+      {
+        "value": "right",
+        "label": "Right"
+      },
+      {
+        "value": "left",
+        "label": "Left"
+      }
+    ]
+   },
+   {
+    "type": "select",
+    "id": "content_alignment",
+    "label": "Content Alignment",
+    "options": [
+      {
+        "value": "center",
+        "label": "Center"
+      },
+      {
+        "value": "right",
+        "label": "Right"
+      },
+      {
+        "value": "left",
+        "label": "Left"
+      }
+    ]
+   },
+   {
+     "type": "text",
+     "id": "hero_title",
+     "label": "Title",
+     "default": "Hero Title"
+   },
+   {
+     "type": "text",
+     "id": "subtext",
+     "label": "Copy",
+     "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+   },
+   {
+    "type": "text",
+    "id": "button_text",
+    "label": "CTA Text",
+    "default": "Read More"
+   },
+   {
+    "type": "url",
+    "id": "button_link",
+    "label": "CTA URL"
+   } 
+   ],
+   "presets": [
+   {
+     "name": "Hero Component",
+     "category": "Image"
+   }
+ ]
+}
+{% endschema %}
+

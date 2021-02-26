@@ -1,0 +1,21 @@
+<style>
+@media screen and (max-width: 840px) {
+    .hero-image-{{ section.id }}{
+        background-image: url({{ section.settings.mobile_image | img_url: '600x'}});
+    }
+  }
+@media screen and (min-width: 840px) {
+    .hero-image-{{ section.id }}{
+        background-image: url({{ section.settings.image | img_url: '1024x'}});
+    }
+  }  
+</style>
+
+
+<section class="hero hero-image-{{ section.id }}">
+    <div class="hero-content align-{{ section.settings.content_alignment }} text-{{ section.settings.text_alignment }}">
+    	<h3 class="hero-header">{{ section.settings.hero_title }}</h3>
+    	<p class="hero-subtext">{{ section.settings.subtext }}</p>
+    	<a href="{{section.settings.button_link}}" class="cta">{{section.settings.button_text }}</a>
+    </div>
+</section>
